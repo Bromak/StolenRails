@@ -12,9 +12,18 @@ public class Mover : MonoBehaviour
         {
             position.x += 1f*Time.deltaTime;
         }
+        if (Input.GetKey(KeyCode.A))
+        {
+            position.x -= 1f*Time.deltaTime;
+        }
         if (Input.GetKey(KeyCode.W))
         {
             position.z += 1f * Time.deltaTime;
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            position.z -= 1f * Time.deltaTime;
         }
         transform.position = position;
     }
