@@ -58,3 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+StolenRails/Library
+StolenRails/Logs
+StolenRails/Temp
+StolenRails/UserSettings
