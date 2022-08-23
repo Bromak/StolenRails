@@ -4,27 +4,33 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
+    [SerializeField] private float _speed = 1;
+    [SerializeField] private  CharacterController _characterController;
+
     void Update()
     {
-        Vector3 position = transform.position;
-
+        
+        Vector3 motion = Vector3.zero;
         if (Input.GetKey(KeyCode.D))
         {
-            position.x += 1f*Time.deltaTime;
+            motion.x += _speed * Time.deltaTime;
         }
+
         if (Input.GetKey(KeyCode.A))
         {
-            position.x -= 1f*Time.deltaTime;
+            motion.x -= _speed * Time.deltaTime;
         }
+
         if (Input.GetKey(KeyCode.W))
         {
-            position.z += 1f * Time.deltaTime;
+            motion.z += _speed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            position.z -= 1f * Time.deltaTime;
+            motion.z -= _speed * Time.deltaTime;
         }
-        transform.position = position;
+
+        _characterController.Move(motion);
     }
 }
