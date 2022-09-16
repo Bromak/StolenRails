@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ede31278bc7c4413b997ec42fcafbfc, type: 3}
+  m_Name: Biome
+  m_EditorClassIdentifier: 
+  Tree: {fileID: 7612559692951277836, guid: b27c8ba287d03448192040219000699c, type: 3}
+  Water: {fileID: 1652051306073015071, guid: b29317157080a492ca95bac2225d95ed, type: 3}
+  Iron: {fileID: 5241963157294169712, guid: 32a8cb02ffeb545f7a349ed310c81ed6, type: 3}
+  Grass: {fileID: 3056159336726966043, guid: d4090767e97e24e718ec76e0461adc0e, type: 3}
+  Stone: {fileID: 5741397989528296582, guid: d1e6187fe1f4943968f6c914dffd825c, type: 3}
