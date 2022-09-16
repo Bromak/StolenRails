@@ -5,9 +5,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Biome", menuName = "Biome", order = 51)]
 public class Biome : ScriptableObject
 {
-    [SerializeField] private GameObject Tree;
-    [SerializeField] private GameObject Water;
-    [SerializeField] private GameObject Iron;
-    [SerializeField] private GameObject Grass;
-    [SerializeField] private GameObject Stone;
+    [SerializeField] private GameObject _tree;
+    [SerializeField] private GameObject _water;
+    [SerializeField] private GameObject _iron;
+    [SerializeField] private GameObject _grass;
+    [SerializeField] private GameObject _stone;
+
+    public GameObject Tree => _tree;
+    public GameObject Water => _water;
+    public GameObject Iron => _iron;
+    public GameObject Grass => _grass;
+    public GameObject Stone => _stone;
 }
