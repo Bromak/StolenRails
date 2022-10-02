@@ -8,9 +8,10 @@ public class SimpleGenerator : MonoBehaviour
     [SerializeField] private Biome biome;
     private Vector3 _playerSpawnPosition = new Vector3(15, 0, 15);
     private int _safeZoneRadius = 7;
-
+    [SerializeField] private GameObject player;
     void Start()
     {
+        Instantiate(player,new Vector3(15,1.5f,15),Quaternion.identity);
         for (int x = 0; x < 100; x++)
         {
             for (int z = 0; z < 20; z++)
